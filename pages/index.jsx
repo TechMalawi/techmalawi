@@ -1,4 +1,4 @@
-const HomePage = () => {
+function HomePage() {
 	return (
 		<div>
 			<h1>Welcome to the revolution.</h1>
@@ -6,6 +6,6 @@ const HomePage = () => {
 			<h4>A community driven revolution.</h4>
 		</div>
 	);
-};
+}
 
 export default HomePage;

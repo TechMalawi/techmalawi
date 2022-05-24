@@ -13,6 +13,7 @@
 	"lint-staged": {
 		"*.js": [
 			"npm run lint",
+			"npm run build",
 			"eslint --cache --fix"
 		],
 		"*.{js,css,md,html,json}": "npm run format",
