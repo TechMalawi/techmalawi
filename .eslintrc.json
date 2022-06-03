@@ -1,32 +1,46 @@
 {
-	"env": {
-		"browser": true,
-		"es2021": true
-	},
-	"extends": [
-		"next/core-web-vitals",
-		"plugin:react/recommended",
-		"airbnb",
-		"prettier"
-	],
-	"parserOptions": {
-		"ecmaFeatures": {
-			"jsx": true
-		},
-		"ecmaVersion": "latest",
-		"sourceType": "module"
-	},
-	"plugins": ["react", "simple-import-sort"],
-	"rules": {
-		"react/prop-types": "off",
-		"react/react-in-jsx-scope": "off",
-		"react/jsx-filename-extension": [0],
-		"import/no-extraneous-dependencies": [
-			"error",
-			{
-				"devDependencies": true
-			}
-		],
-		"react/jsx-props-no-spreading": "off"
-	}
+    "env": {
+        "browser": true
+    },
+    "extends": [
+        "next/core-web-vitals",
+        "plugin:react/recommended",
+        "airbnb",
+        "prettier"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "simple-import-sort"
+    ],
+    "rules": {
+        "react/prop-types": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-filename-extension": [
+            0
+        ],
+        "no-console": "off",
+        "@typescript-eslint/no-unused-vars": "error",
+        "@typescript-eslint/no-explicit-any": "warn",
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error",
+        "react-hooks/exhaustive-deps": "off",
+        "import/first": "error",
+        "import/newline-after-import": "error",
+        "import/no-duplicates": "error",
+        "unicorn/filename-case": "off",
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": true
+            }
+        ],
+        "react/jsx-props-no-spreading": "off"
+    }
 }

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+p, h1, h2, h3, h4, h5, h6, html, strong, label, input, span, select, optgroup, option, a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@layer components {
+
+    .btn-primary {
+        @apply py-3 px-4 bg-malawi-blue text-white font-semibold rounded-md w-full shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-malawi-blue focus:ring-opacity-75;
+    }
+
+    .btn-danger {
+        @apply py-2 px-4 bg-malawi-red text-white font-semibold rounded-md w-full shadow-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    }
+
+    .btn-primary-outline {
+        @apply py-2.5 text-malawi-blue px-4 border border-malawi-blue  font-semibold w-full rounded-md hover:text-white shadow-md hover:bg-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    }
+
+    .btn-danger-outline {
+        @apply py-2.5  text-malawi-red px-4 border border-red-500  font-semibold w-full rounded-md hover:text-white shadow-md hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    }
+
+    .btn-default-outline {
+        @apply py-2 text-gray-500 px-4 border  border-gray-200  font-semibold w-full rounded-md hover:text-white shadow-sm hover:bg-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    }
+
+    .text-input {
+        @apply border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
+    }
+
+    .select-input {
+        @apply bg-gray-50 text-xs border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
+    }
+
+    .check-input {
+        @apply text-input appearance-none text-xs h-[10px] w-1 border border-gray-100 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none
+        transition duration-200  bg-center bg-contain float-left mr-2 cursor-pointer
+    }
+
+
+    .default-text {
+        @apply text-[9px] md:text-xs text-slate-500
+    }
+
+    .title-text {
+        @apply md:text-5xl sm:text-2xl text-2xl font-bold
+    }
+
+    .sub-title-text {
+        @apply md:text-3xl sm:text-xl text-sm font-bold
+    }
+
+    .display-text {
+        @apply text-xs md:text-sm
+    }
+
+
+    .in-active-tab-state {
+        @apply p-2 w-full rounded text-center cursor-pointer
+    }
+
+    .rbc-header {
+        @apply text-red-900 !important
+    }
+
+    .helper-text {
+        @apply text-[9px] md:text-xs
+    }
+
+    .calendar-text {
+        @apply text-[10px]
+    }
+
+    .dashboard-container {
+        @apply grid grid-cols-4 gap-6 mt-10 justify-center  mx-4  p-4
+    }
+
+    .template-box {
+        @apply bg-gray-200 my-4 p-3 flex items-center rounded justify-between
+    }
+
+    .left-panel {
+        @apply col-span-1
+    }
+
+    .right-panel {
+        @apply col-span-3
+    }
+
+    .custom-hybrid-work-day {
+        @apply w-full text-center rounded  py-2 bg-blue-100 cursor-pointer    text-blue-600
+    }
+
+    .custom-hybrid-work-day-unselected {
+        @apply w-full text-center cursor-pointer
+    }
+
+    .day-onboarding {
+        @bg-gray-50 w-full text-center text-sm text-gray-700 rounded p-3
+    }
+
+    .main-button {
+        @apply rounded-lg text-xs border border-2 p-3 text-slate-700 border-gray-200 hover:bg-gray-800 hover:text-white;
+    }
+
+    .secondary-button {
+        @apply rounded-lg text-xs bg-blue-800 text-white border  border-2 p-3  border-gray-200 hover:bg-blue-600 hover:text-white;
+    }
+
+
+}
