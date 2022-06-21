@@ -1,46 +1,58 @@
 {
-    "env": {
-        "browser": true
+  "env": {
+    "browser": true
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:react/recommended",
+    "airbnb",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "extends": [
-        "next/core-web-vitals",
-        "plugin:react/recommended",
-        "airbnb",
-        "prettier"
+    "ecmaVersion": 2022,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "prefer-arrow-functions",
+    "simple-import-sort"
+  ],
+  "rules": {
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": [
+      0
     ],
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react",
-        "simple-import-sort"
+    "no-console": "off",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "react-hooks/exhaustive-deps": "off",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "unicorn/filename-case": "off",
+    "react/jsx-props-no-spreading": "off",
+    "prefer-arrow-functions/prefer-arrow-functions": [
+      "warn",
+      {
+        "classPropertiesAllowed": false,
+        "disallowPrototype": false,
+        "returnStyle": "unchanged",
+        "singleReturnOnly": false
+      }
     ],
-    "rules": {
-        "react/prop-types": "off",
-        "react/react-in-jsx-scope": "off",
-        "react/jsx-filename-extension": [
-            0
-        ],
-        "no-console": "off",
-        "@typescript-eslint/no-unused-vars": "error",
-        "@typescript-eslint/no-explicit-any": "warn",
-        "simple-import-sort/imports": "error",
-        "simple-import-sort/exports": "error",
-        "react-hooks/exhaustive-deps": "off",
-        "import/first": "error",
-        "import/newline-after-import": "error",
-        "import/no-duplicates": "error",
-        "unicorn/filename-case": "off",
-        "import/no-extraneous-dependencies": [
-            "error",
-            {
-                "devDependencies": true
-            }
-        ],
-        "react/jsx-props-no-spreading": "off"
-    }
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/anchor-has-content": "off"
+  }
 }
