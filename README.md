@@ -9,6 +9,8 @@ First, run the development server:
 
 ##### 1. Clone the repository
 
-##### 2. Install all dependencies with `yarn install` or `npm install`
+##### 2. Install all dependencies with `npm install`
+
+##### 3. Start the application with `npm run dev`
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
