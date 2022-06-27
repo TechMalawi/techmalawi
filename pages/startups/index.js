@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
 
-import AppLayout from '../core/layout/AppLayout';
-import getIndustries from '../core/utils/get-industries';
+import AppLayout from '../../core/layout/AppLayout';
+import getIndustries from '../../core/utils/get-industries';
 import IndustryCard from './components/industry-card';
 
 const Startups = () => (

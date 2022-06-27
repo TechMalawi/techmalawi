@@ -1,4 +1,4 @@
-import AppLayout from '../core/layout/AppLayout';
+import AppLayout from '../../core/layout/AppLayout';
 
 const Projects = () => (
 	<AppLayout>

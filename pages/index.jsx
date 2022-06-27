@@ -1,8 +1,8 @@
 import { ArrowRightIcon } from '@primer/octicons-react';
 import Link from 'next/link';
 
-import TextLogo from './core/components/misc/TextLogo';
-import AppLayout from './core/layout/AppLayout';
+import TextLogo from '../core/components/misc/TextLogo';
+import AppLayout from '../core/layout/AppLayout';
 
 const HomePage = () => (
 	<AppLayout>
