@@ -10,6 +10,7 @@ module.exports = {
 				'malawi-blue': '#42C2FF',
 				'malawi-green': '#00C897',
 				'malawi-black': '#171717',
+				'malawi-black-dark': '#070707',
 				'malawi-red': '#DA0037',
 				'malawi-white': '#FFFFFF',
 			},
