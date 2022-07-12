@@ -1,6 +1,7 @@
 import { ArrowRightIcon } from '@primer/octicons-react';
 import Link from 'next/link';
 
+import HomeCommunityForm from '../core/components/elements/HomeCommunityForm/HomeCommunityForm';
 import TextLogo from '../core/components/misc/TextLogo';
 import AppLayout from '../core/layout/AppLayout';
 
@@ -35,6 +36,8 @@ const HomePage = () => (
 		</div>
 
 		<div className="text-malawi-white mt-10 md:p-20 p-10">We are working towards a lot</div>
+
+		<HomeCommunityForm />
 	</AppLayout>
 );
 

@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@100;400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -15,6 +14,18 @@
 }
 
 @layer components {
+	.font-montserrat {
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.bg-gray-linear {
+		background: linear-gradient(
+			90deg,
+			rgba(36, 40, 43, 0.35) 11.15%,
+			rgba(14, 17, 18, 0.47) 74.92%
+		);
+	}
+
 	.btn-primary {
 		@apply py-3 px-4 bg-malawi-blue text-white font-semibold rounded-md w-full shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-malawi-blue focus:ring-opacity-75;
 	}
