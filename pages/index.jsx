@@ -112,7 +112,7 @@ const HomePage = () => (
 				</p>
 				<p>
 					Through this platform, people are given the chance to share their knowledge with others.
-					This in turn can advance one's understanding of the subject matter being shared.
+					This in turn can advance one&apos;s understanding of the subject matter being shared.
 				</p>
 
 				<img src="/share.png" alt="" />
