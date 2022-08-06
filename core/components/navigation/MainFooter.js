@@ -5,10 +5,7 @@ const MainFooter = () => (
 		<div className="max-w-[1400px] w-full flex flex-col sm:flex-row sm:gap-12 justify-center px-2 gap-4">
 			<div className="flex flex-col sm:w-[50%] gap-1">
 				<h4 className="text-lg font-bold font-montserrat">TechMalawi</h4>
-				<p className="text-sm">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-					ut labore et dolore magna aliqua.
-				</p>
+				<p className="text-sm">Through community, we can build, and grow</p>
 			</div>
 			<div className="flex sm:w-[50%] gap-4">
 				<div className="flex flex-col w-1/2">

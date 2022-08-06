@@ -7,26 +7,27 @@ import AppLayout from '../core/layout/AppLayout';
 
 const HomePage = () => (
 	<AppLayout>
-		<div className="md:m-15 md-20 flex flex-col  md:grid md:grid-cols-5">
-			<div className="col-span-3 p-4  md:m-40 flex gap-2 flex-col text-malawi-white">
-				<div className="title-text flex gap-2 ">
-					Welcome to <TextLogo />
-				</div>
-				<p className="sub-title-text ">A central Hub for everything tech in Malawi.</p>
-				<p className="display-text">
-					Become part of the community and help in the growth of technology in malawi by
-					contributing to the community projects here.
-				</p>
-				<div className="md:w-52 mt-4">
-					<Link href="/">
-						<a href="" className="btn-primary flex items-center justify-center gap-4">
-							Contribute <ArrowRightIcon />
-						</a>
-					</Link>
-				</div>
+		<div
+			className="md:m-15 md-20 flex gap-4 flex-col justify-center items-center md:h-[60vh] h-[35vh]"
+			style={{
+				backgroundImage:
+					'linear-gradient(to bottom, rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.85)), url(../sg.jpeg)',
+				backgroundSize: 'cover',
+				backgroundPosition: 'center',
+				backgroundRepeat: 'no-repeat',
+			}}
+		>
+			<div className="title-text text-white flex gap-2 ">
+				Welcome to <TextLogo />
 			</div>
-			<div className="flex flex-col w-full   md:col-span-2 md:pr-10 justify-center items-center">
-				<img src="/sample.jpg" className="w-full p-10 md:p-20 rounded-lg" alt="" />
+			<p className="sub-title-text text-white ">A central Hub for everything tech in Malawi.</p>
+
+			<div className="md:w-52 mt-4">
+				<Link href="/about">
+					<a href="" className="btn-primary flex items-center justify-center gap-4">
+						Learn More <ArrowRightIcon />
+					</a>
+				</Link>
 			</div>
 		</div>
 
