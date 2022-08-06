@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 import getRoutes from '../../utils/get-routes';
+import TextLogo from '../misc/TextLogo';
 
 const Navbar = () => {
 	const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -11,9 +12,9 @@ const Navbar = () => {
 		<nav className="relative flex flex-wrap items-center justify-between  py-3  bg-malawi-white">
 			<div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
 				<div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-					<Link href="/pages">
-						<a className="font-bold leading-relaxed inline-block mr-4 py-2  uppercase">
-							TechMalawi
+					<Link href="/">
+						<a className="font-bold leading-relaxed flex justify-center items-center inline-block mr-4 py-2  uppercase">
+							<img src="/logo.png" className="h-[48px]" alt="" /> <TextLogo />
 						</a>
 					</Link>
 					<button

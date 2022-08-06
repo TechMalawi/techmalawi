@@ -15,18 +15,13 @@ const getRoutes = () => [
 		name: 'Contributors',
 		path: '/contributors',
 	},
-
 	{
 		name: 'Events',
 		path: '/events',
 	},
 	{
-		name: 'Find Talent',
-		path: '/talent',
-	},
-	{
-		name: 'Blog',
-		path: '/blog',
+		name: 'About Us',
+		path: '/about',
 	},
 ];
 

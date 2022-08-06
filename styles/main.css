@@ -71,53 +71,20 @@
 		@apply md:text-3xl sm:text-xl text-sm font-bold;
 	}
 
+	.sub-title-text-slim {
+		@apply md:text-3xl sm:text-xl text-sm;
+	}
+
 	.display-text {
 		@apply text-xs md:text-sm;
-	}
-
-	.in-active-tab-state {
-		@apply p-2 w-full rounded text-center cursor-pointer;
-	}
-
-	.rbc-header {
-		@apply text-red-900 !important;
 	}
 
 	.helper-text {
 		@apply text-[9px] md:text-xs;
 	}
 
-	.calendar-text {
-		@apply text-[10px];
-	}
 
-	.dashboard-container {
-		@apply grid grid-cols-4 gap-6 mt-10 justify-center  mx-4  p-4;
-	}
 
-	.template-box {
-		@apply bg-gray-200 my-4 p-3 flex items-center rounded justify-between;
-	}
-
-	.left-panel {
-		@apply col-span-1;
-	}
-
-	.right-panel {
-		@apply col-span-3;
-	}
-
-	.custom-hybrid-work-day {
-		@apply w-full text-center rounded  py-2 bg-blue-100 cursor-pointer    text-blue-600;
-	}
-
-	.custom-hybrid-work-day-unselected {
-		@apply w-full text-center cursor-pointer;
-	}
-
-	.day-onboarding {
-		@bg-gray-50 w-full text-center text-sm text-gray-700 rounded p-3;
-	}
 
 	.main-button {
 		@apply rounded-lg text-xs border border-2 p-3 text-slate-700 border-gray-200 hover:bg-gray-800 hover:text-white;
