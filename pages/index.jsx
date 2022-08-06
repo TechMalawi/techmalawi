@@ -1,4 +1,4 @@
-import { ArrowRightIcon, CheckboxIcon } from '@primer/octicons-react';
+import { ArrowRightIcon } from '@primer/octicons-react';
 import Link from 'next/link';
 
 import TextLogo from '../core/components/misc/TextLogo';
@@ -71,27 +71,13 @@ const HomePage = () => (
 						Every Sunday, we have a series of events where you can learn about:
 					</p>
 					<ul>
-						<li className="flex gap-2  items-center">
-							<CheckboxIcon /> Latest Technological Advances
-						</li>
-						<li className="flex gap-2  items-center">
-							<CheckboxIcon /> Software Development
-						</li>
-						<li className="flex gap-2  items-center">
-							<CheckboxIcon /> Network Engineering
-						</li>
-						<li className="flex gap-2  items-center">
-							<CheckboxIcon /> Data Science & Analytics
-						</li>
-						<li className="flex gap-2  items-center">
-							<CheckboxIcon /> Product Design
-						</li>
-						<li className="flex gap-2  items-center">
-							<CheckboxIcon /> Drone Technology
-						</li>
-						<li className="flex gap-2  items-center">
-							<CheckboxIcon /> Blockchain Technology
-						</li>
+						<li className="flex gap-2  items-center">Latest Technological Advances</li>
+						<li className="flex gap-2  items-center">Software Development</li>
+						<li className="flex gap-2  items-center">Network Engineering</li>
+						<li className="flex gap-2  items-center">Data Science & Analytics</li>
+						<li className="flex gap-2  items-center">Product Design</li>
+						<li className="flex gap-2  items-center">Drone Technology</li>
+						<li className="flex gap-2  items-center">Blockchain Technology</li>
 					</ul>
 				</div>
 				<div className="bg-malawi-blue p-2 rounded">
