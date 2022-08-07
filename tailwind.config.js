@@ -14,6 +14,10 @@ module.exports = {
 				'malawi-red': '#DA0037',
 				'malawi-white': '#FFFFFF',
 			},
+
+			backgroundImage: {
+				'blog-hero': "url('/blog-hero-open-book.jpg')",
+			},
 		},
 	},
 	plugins: [],
