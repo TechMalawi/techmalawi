@@ -1,6 +1,6 @@
 import AppLayout from '../../core/layout/AppLayout';
-import BlogCardsContainer from './BlogCardsContainer';
-import BlogHeader from './BlogHeader';
+import BlogCardsContainer from './components/BlogCardsContainer';
+import BlogHeader from './components/BlogHeader';
 
 // Dummy data to represent how data will be represented after API call
 const dummyPostsData = [
