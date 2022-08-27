@@ -13,7 +13,7 @@ const Navbar = () => {
 			<div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
 				<div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
 					<Link href="/">
-						<a className="font-bold leading-relaxed flex justify-center items-center inline-block mr-4 py-2  uppercase">
+						<a className="font-bold leading-relaxed flex justify-center items-center mr-4 py-2  uppercase">
 							<img src="/logo.png" className="h-[48px]" alt="" /> <TextLogo />
 						</a>
 					</Link>
