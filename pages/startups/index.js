@@ -1,11 +1,16 @@
+import groq from 'groq';
 import Link from 'next/link';
+import * as PropTypes from 'prop-types';
 import React from 'react';
 
 import AppLayout from '../../core/layout/AppLayout';
+import sanityClient from '../../core/sanity/sanity-client';
 import getIndustries from '../../core/utils/get-industries';
 import IndustryCard from './components/industry-card';
+import Startup from './components/startup';
 
-const Startups = () => (
+Startup.propTypes = { startup: PropTypes.any };
+const Startups = ({ startups }) => (
 	<AppLayout>
 		<div
 			style={{
@@ -41,24 +46,22 @@ const Startups = () => (
 			))}
 		</div>
 
-		<div className="grid md:grid-cols-5 my-10 pb-10 grid-cols-2 p-10 md:mx-20 md:mt-20 m-10 gap-4 bg-gray-50">
-			<div className="bg-malawi-blue p-2 text-center">Startup 1</div>
-			<div className="bg-malawi-blue p-2 text-center">Startup 1</div>
-			<div className="bg-malawi-blue p-2 text-center">Startup 1</div>
-			<div className="bg-malawi-blue p-2 text-center">Startup 1</div>
-			<div className="bg-malawi-blue p-2 text-center">Startup 1</div>
-			<div className="bg-malawi-blue p-2 text-center">Startup 1</div>
-			<div className="bg-malawi-blue p-2 text-center">Startup 1</div>
-			<div className="bg-malawi-blue p-2 text-center">Startup 1</div>
-			<div className="bg-malawi-blue p-2 text-center">Startup 1</div>
-			<div className="bg-malawi-blue p-2 text-center">Startup 1</div>
-			<div className="bg-malawi-blue p-2 text-center">Startup 1</div>
-			<div className="bg-malawi-blue p-2 text-center">Startup 1</div>
-			<div className="bg-malawi-blue p-2 text-center">Startup 1</div>
-			<div className="bg-malawi-blue p-2 text-center">Startup 1</div>
-			<div className="bg-malawi-blue p-2 text-center">Startup 1</div>
+		<div className="grid md:grid-cols-5 my-10 pb-10 grid-cols-2 p-10 md:mx-20 md:mt-20 m-10 gap-4 ">
+			{startups.map((startup) => (
+				<Startup startup={startup} />
+			))}
 		</div>
 	</AppLayout>
 );
+
+export const getServerSideProps = async () => {
+	const startups = await sanityClient.fetch(groq`*[_type == "startups"]`);
+
+	return {
+		props: {
+			startups,
+		},
+	};
+};
 
 export default Startups;

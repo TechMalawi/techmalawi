@@ -63,7 +63,7 @@ const HomePage = () => (
 			</div>
 		</div>
 
-		<div className="bg-malawi-blue md:p-20 p-10 gap-3 flex flex-col md:grid md:grid-cols-5">
+		<div className="bg-malawi-blue md:p-20 justify-center p-10 gap-3 flex flex-col md:grid md:grid-cols-5">
 			<div className="col-span-3 flex flex-col justify-between bg-slate-200 p-10 rounded">
 				<div>
 					<h4 className="title-text text-malawi-blue">Learn</h4>
@@ -84,7 +84,7 @@ const HomePage = () => (
 					All Malawians are welcome to be a part of this community
 				</div>
 			</div>
-			<div>
+			<div className="col-span-2">
 				<img src="/das.png" alt="" />
 				<img src="/lin.png" alt="" />
 			</div>
