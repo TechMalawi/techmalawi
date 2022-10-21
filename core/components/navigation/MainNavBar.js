@@ -8,8 +8,8 @@ const Navbar = () => {
 	const [navbarOpen, setNavbarOpen] = React.useState(false);
 	const routes = getRoutes;
 	return (
-		<nav className="relative flex flex-wrap items-center justify-between  py-3  bg-malawi-white">
-			<div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+		<nav className="relative w-full flex flex-wrap items-center justify-between  py-3  bg-malawi-white">
+			<div className=" container px-4 mx-auto flex flex-wrap items-center justify-between">
 				<div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
 					<Link href="/pages">
 						<a className="font-bold leading-relaxed inline-block mr-4 py-2  uppercase">
@@ -29,7 +29,7 @@ const Navbar = () => {
 						{routes.map((route) => (
 							<Link key={route.name} href={route.path}>
 								<a
-									className={`p-1 ${
+									className={`hover:text-malawi-blue hover:duration-500 p-1 ${
 										routes.path === route.path ? 'active-state' : ' text-gray-700'
 									}`}
 								>

@@ -19,7 +19,7 @@ const HomePage = () => (
 				</p>
 				<div className="md:w-52 mt-4">
 					<Link href="/">
-						<a href="" className="btn-primary flex items-center justify-center gap-4">
+						<a href="" className="duration-500 btn-primary flex items-center justify-center gap-4">
 							Contribute <ArrowRightIcon />
 						</a>
 					</Link>

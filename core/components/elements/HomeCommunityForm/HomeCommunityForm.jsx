@@ -18,7 +18,7 @@ const HomeCommunityForm = () => (
 					</div>
 					<input type="email" className="text-input" placeholder="Email address" />
 					<input type="password" className="text-input" placeholder="Create password" />
-					<input type="submit" className="btn-primary sm:w-[30%] cursor-pointer" value="Register" />
+					<input type="submit" className="btn-primary hover:duration-500 sm:w-[30%] cursor-pointer" value="Register" />
 				</form>
 			</div>
 		</div>
